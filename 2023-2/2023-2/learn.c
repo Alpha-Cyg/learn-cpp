@@ -203,3 +203,117 @@
 //	return 0;
 //}
 
+//static-静态的
+// 1.修饰局部变量
+// 2.修饰全局变量
+// 3.修饰函数
+//
+//void test()
+//{
+//	static int a = 1;
+//	a++;
+//	printf("%d", a);
+//}
+//int main()
+//{
+//	int i = 0;
+//	while (i < 10)
+//	{
+//		test();
+//		i++;
+//	}
+//	return 0;
+//}
+
+//static修饰的局部变量生命周期变为全局，但作用域和普通的局部变量一样,本质上是改变了变量的存储类型
+//static修饰的局部变量主要影响全局变量的跨文件访问，即主要影响其作用域,其作用域从整个工程变为本源文件，只在本源文件内才可以被访问
+//其他源文件需要跨文件调用它只能通过它所在源文件的函数间接访问，这也是保护数据的一种方式，但其生命周期不变，依然为从程序开始到程序结束
+//static修饰的函数，使得函数只能在自己所在的源文件内部使用，本质上是将函数的外部连接属性变成了内部连接属性
+// 
+
+
+//define是一个预处理指令
+//1.define定义符号（常量）
+//
+//#define A 1000//不需要；
+//int main()
+//{
+//	printf("%d\n", A);
+//	return 0;
+//}
+
+//define定义宏
+// 
+//#define add(x,y) x+y//应该用（(x)+(y)）
+//int main()
+//{
+//	printf("%d\n", add(2, 3));
+//	printf("%d\n", 4*add(2, 3));//define定义的宏是直接替换的，相当于4*2+3
+//	return 0;
+//}
+
+//指针
+//指针的本质是地址（存储地址的变量）
+// 
+//int main()
+//{
+//	int a = 10;
+//	printf("%p\n", &a);
+//	int* pa = &a;//pa是用来存放地址的变量，即指针变量,*前的int表明了指针所指向的变量的数据类型
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	printf("%p\n", &a);
+//	int* pa = &a;
+//	*pa = 20;//等价于a=20,*为解引用操作，*pa即为通过pa存储的地址找到地址上的变量
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("%d\n", sizeof(char*));
+//	printf("%d\n", sizeof(int*));
+//	printf("%d\n", sizeof(short*));
+//	printf("%d\n", sizeof(long*));
+//	printf("%d\n", sizeof(long long*));
+//	printf("%d\n", sizeof(float*));
+//	printf("%d\n", sizeof(double*));
+//	return 0;
+//}//指针的大小都是相同的，与指针对应的变量类型无关，32位平台上固定为4byte，64位平台上固定为8byte
+
+
+//结构体struct
+//用来创建可以描述复杂对象的新类型
+
+//例如创建一个学生档案
+
+struct stu
+{
+	char name[20];
+	int age;
+	int stu_number;
+	double gpa;
+};
+
+//创建一本书的信息
+struct book
+{
+	char name[20];
+	float price;
+	char id[30];
+};
+
+//结构体创建、初始化、访问
+
+int main()
+{
+	struct stu s = { "张三",20,1919810,84.7 }; //结构体创建、初始化
+	printf("%s %d %d %lf", s.name, s.age, s.stu_number, s.gpa);//结构体元素的访问
+	struct stu* ps = &s;
+	printf("%s", (*ps).name);//第二种访问方式：通过指针
+	printf("%s", ps->name);//第三种方式：->左侧必须是结构体指针，右侧是成员变量
+	return 0;
+}
