@@ -1,16 +1,2 @@
 ﻿  learn.c
-C:\code\learn-cpp\2023-2\2023-2\learn.c(277,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(277,9): message : 请考虑在格式字符串中使用“%zd”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(278,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(278,9): message : 请考虑在格式字符串中使用“%zd”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(279,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(279,9): message : 请考虑在格式字符串中使用“%zd”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(280,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(280,9): message : 请考虑在格式字符串中使用“%zd”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(281,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(281,9): message : 请考虑在格式字符串中使用“%zd”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(282,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(282,9): message : 请考虑在格式字符串中使用“%zd”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(283,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-C:\code\learn-cpp\2023-2\2023-2\learn.c(283,9): message : 请考虑在格式字符串中使用“%zd”
   2023-2.vcxproj -> C:\code\learn-cpp\2023-2\x64\Debug\2023-2.exe

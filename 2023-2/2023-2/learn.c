@@ -290,30 +290,41 @@
 
 //例如创建一个学生档案
 
-struct stu
-{
-	char name[20];
-	int age;
-	int stu_number;
-	double gpa;
-};
-
-//创建一本书的信息
-struct book
-{
-	char name[20];
-	float price;
-	char id[30];
-};
-
-//结构体创建、初始化、访问
+//struct stu
+//{
+//	char name[20];
+//	int age;
+//	int stu_number;
+//	double gpa;
+//};
+//
+////创建一本书的信息
+//struct book
+//{
+//	char name[20];
+//	float price;
+//	char id[30];
+//};
+//
+////结构体创建、初始化、访问
+//
+//int main()
+//{
+//	struct stu s = { "张三",20,1919810,84.7 }; //结构体创建、初始化
+//	printf("%s %d %d %lf", s.name, s.age, s.stu_number, s.gpa);//结构体元素的访问
+//	struct stu* ps = &s;
+//	printf("%s", (*ps).name);//第二种访问方式：通过指针
+//	printf("%s", ps->name);//第三种方式：->左侧必须是结构体指针，右侧是成员变量
+//	return 0;
+//}
+//
+//const int  a = 10;
+//
 
 int main()
 {
-	struct stu s = { "张三",20,1919810,84.7 }; //结构体创建、初始化
-	printf("%s %d %d %lf", s.name, s.age, s.stu_number, s.gpa);//结构体元素的访问
-	struct stu* ps = &s;
-	printf("%s", (*ps).name);//第二种访问方式：通过指针
-	printf("%s", ps->name);//第三种方式：->左侧必须是结构体指针，右侧是成员变量
+	int a = 0;
+	if(2==a)
+		printf("%d\n", 5);
 	return 0;
 }
