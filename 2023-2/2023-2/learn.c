@@ -321,10 +321,63 @@
 //const int  a = 10;
 //
 
-int main()
-{
-	int a = 0;
-	if(2==a)
-		printf("%d\n", 5);
-	return 0;
-}
+//int main()
+//{
+//	int a = 0;
+//	if(2==a)
+//		printf("%d\n", 5);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = 1;
+//	//while (i <= 100)
+//	//{
+//	//	if (1 == i % 2)
+//	//	{
+//	//		printf("%d\n", i);
+//	//	}
+//	//	i++;
+//	//}
+//	for (i = 1; i <= 100; i += 2)
+//		printf("%d\n", i);
+//	return 0;
+//}
+
+//switch
+
+//int main()
+//{
+//	int day = 0;
+//	scanf("%d", &day);
+//	switch (day)
+//	{
+//	case 1:
+//		printf("星期一\n");
+//		break;
+//	case 2:
+//		printf("星期二\n");
+//		break;
+//	case 3:
+//		printf("星期三\n");
+//		break;
+//	case 4:
+//		printf("星期四\n");
+//		break;
+//	case 5:
+//		printf("星期五\n");
+//		break;
+//	case 6:
+//		printf("星期六\n");
+//		break;
+//	case 7:
+//		printf("星期日\n");
+//		break;
+//	default:
+//		printf("输入错误\n");
+//		break;
+//	}
+//	return 0;
+//}
+
